@@ -1,3 +1,20 @@
-einops
-torch>=1.7
-basicsr==1.3.4.9
+# PyTorch (이미 설치되어 있다면 생략 가능)
+torch==2.0.1
+torchvision==0.15.2
+
+# 핵심 라이브러리
+basicsr==1.4.2
+einops==0.4.1
+scipy
+numpy
+opencv-python
+pillow
+PyYAML
+tqdm
+lmdb
+
+# 로깅 및 유틸
+tensorboardX
+tb-nightly
+yapf
+future

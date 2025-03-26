@@ -8,10 +8,11 @@ datasets:
   test_1:  # the 1st test dataset
     name: Set5
     type: PairedImageDataset
-    dataroot_gt: ./datasets/Set5/GTmod4
-    dataroot_lq: ./datasets/Set5/LRbicx4
+    dataroot_gt: /home/ml/HAT/datasets/gt_black
+    dataroot_lq: /home/ml/HAT/datasets/d3
     io_backend:
       type: disk
+    tile: 128
 
   # test_2:  # the 2nd test dataset
   #   name: Set14
@@ -51,7 +52,8 @@ network_g:
   upscale: 4
   in_chans: 3
   img_size: 64
-  window_size: 16
+  window_size: 64
+   #16
   compress_ratio: 3
   squeeze_factor: 30
   conv_scale: 0.01
